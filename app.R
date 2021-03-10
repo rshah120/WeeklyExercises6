@@ -2,6 +2,7 @@
 library(shiny)
 library(tidyverse)
 library(COVID19)
+library(rsconnect)
 
 covid19 <- read_csv("https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-states.csv")
 
@@ -45,7 +46,7 @@ server <- function(input, output) {
       group_by(input$state) %>%
       filter(cases > 20) %>%
       ggplot() + 
-      geom_point(aes(x = date, y = cases, group = input$date)) +
+      geom_line(aes(x = date, y = cases, group = input$state)) +
       scale_x_continuous(limits = input$date) +
       scale_y_log10() +
       theme_minimal()

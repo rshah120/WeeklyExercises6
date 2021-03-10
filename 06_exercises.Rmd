@@ -96,7 +96,7 @@ colors = scales::col_numeric(
       ) %>% as.character()
 ```
 
-![](garden_table.html){width=600, height=1000}
+
 
 
   5. Create a table using `gt` with data from your project or from the `garden_harvest` data if your project data aren't ready. 
