@@ -12,7 +12,7 @@ output:
 
 
 ```{r setup, include=FALSE}
-#knitr::opts_chunk$set(echo = TRUE, error=TRUE, message=FALSE, warning=FALSE)
+knitr::opts_chunk$set(echo = TRUE, error=TRUE, message=FALSE, warning=FALSE)
 ```
 
 ```{r libraries}
@@ -103,13 +103,16 @@ colors = scales::col_numeric(
   
 ```{r}
 garden_harvest %>%
-  group_by(variety) %>%
-  filter(vegetable == "tomatoes") %>%
-  mutate(cum_weight = cumsum(weight)) %>%
-  gt() %>%
+  filter(vegetable == "carrots") %>%
+  head() %>%
+  gt(
+    groupname_col = "variety",
+    rowname_col = "date"
+  ) %>%
   tab_header(
-    title = "Cumulative Weight of Tomatoes Harvested (g) by Variety"
-  ) 
+    title = "Daily Weight of Carrots Harvested (g) by Variety"
+  ) %>%
+  cols_hide("vegetable")
   
 ```
   

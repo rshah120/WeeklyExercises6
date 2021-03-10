@@ -36,16 +36,16 @@ ui <- fluidPage(
                              Guam = "Guam", Mariana = "Northern Mariana Islands",
                              PR = "Puerto Rico", VI = "Virgin Islands")),
   submitButton(text = "Create my plot!"),
-  plotOutput(outputId = "covidplot")
+  plotOutput(outputId = "timeplot")
 )
 
 server <- function(input, output) {
-  output$covidplot <- renderPlot({
+  output$timeplot <- renderPlot({
     covid19 %>% 
-      group_by(state) %>%
+      group_by(input$state) %>%
       filter(cases > 20) %>%
       ggplot() + 
-      geom_line(aes(x = date, y = cases, group = input$state)) +
+      geom_point(aes(x = date, y = cases, group = input$date)) +
       scale_x_continuous(limits = input$date) +
       scale_y_log10() +
       theme_minimal()
