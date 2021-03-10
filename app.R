@@ -46,7 +46,7 @@ server <- function(input, output) {
       group_by(input$state) %>%
       filter(cases > 20) %>%
       ggplot() + 
-      geom_line(aes(x = date, y = cases, group = input$state)) +
+      geom_line(aes(x = date, y = cases, color = input$state)) +
       scale_x_continuous(limits = input$date) +
       scale_y_log10() +
       theme_minimal()

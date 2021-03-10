@@ -5,9 +5,9 @@ account: rshah1
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 3764704
-bundleId: 4323506
+bundleId: 4323528
 url: https://rshah1.shinyapps.io/WeeklyExercises6/
-when: 1615336043.29688
+when: 1615336403.28711
 asMultiple: FALSE
 asStatic: FALSE
 ignoredFiles: 06_exercises.html|06_exercises.md|06_exercises.Rmd|archive.zip|Groceries_dataset.csv|README.md|06_exercises_files/figure-html/unnamed-chunk-5-1.png
