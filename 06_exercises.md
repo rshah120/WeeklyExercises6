@@ -72,6 +72,8 @@ Once your repository is created, you should always open your **project** rather 
 
   1. This app will also use the COVID data. Make sure you load that data and all the libraries you need in the `app.R` file you create. Below, you will post a link to the app that you publish on shinyapps.io. You will create an app to compare states' cumulative number of COVID cases over time. The x-axis will be number of days since 20+ cases and the y-axis will be cumulative cases on the log scale (`scale_y_log10()`). We use number of days since 20+ cases on the x-axis so we can make better comparisons of the curve trajectories. You will have an input box where the user can choose which states to compare (`selectInput()`) and have a submit button to click once the user has chosen all states they're interested in comparing. The graph should display a different line for each state, with labels either on the graph or in a legend. Color can be used if needed. 
   
+https://rshah1.shinyapps.io/WeeklyExercises6/
+  
 ## Warm-up exercises from tutorial
 
   2. Read in the fake garden harvest data. Find the data [here](https://github.com/llendway/scraping_etc/blob/main/2020_harvest.csv) and click on the `Raw` button to get a direct link to the data. 
@@ -123,7 +125,7 @@ garden_harvest %>%
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#hbboyevrmd .gt_table {
+#hutjdoochl .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -148,7 +150,7 @@ garden_harvest %>%
   border-left-color: #D3D3D3;
 }
 
-#hbboyevrmd .gt_heading {
+#hutjdoochl .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -160,7 +162,7 @@ garden_harvest %>%
   border-right-color: #D3D3D3;
 }
 
-#hbboyevrmd .gt_title {
+#hutjdoochl .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -170,7 +172,7 @@ garden_harvest %>%
   border-bottom-width: 0;
 }
 
-#hbboyevrmd .gt_subtitle {
+#hutjdoochl .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -180,13 +182,13 @@ garden_harvest %>%
   border-top-width: 0;
 }
 
-#hbboyevrmd .gt_bottom_border {
+#hutjdoochl .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#hbboyevrmd .gt_col_headings {
+#hutjdoochl .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -201,7 +203,7 @@ garden_harvest %>%
   border-right-color: #D3D3D3;
 }
 
-#hbboyevrmd .gt_col_heading {
+#hutjdoochl .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -221,7 +223,7 @@ garden_harvest %>%
   overflow-x: hidden;
 }
 
-#hbboyevrmd .gt_column_spanner_outer {
+#hutjdoochl .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -233,15 +235,15 @@ garden_harvest %>%
   padding-right: 4px;
 }
 
-#hbboyevrmd .gt_column_spanner_outer:first-child {
+#hutjdoochl .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#hbboyevrmd .gt_column_spanner_outer:last-child {
+#hutjdoochl .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#hbboyevrmd .gt_column_spanner {
+#hutjdoochl .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -253,7 +255,7 @@ garden_harvest %>%
   width: 100%;
 }
 
-#hbboyevrmd .gt_group_heading {
+#hutjdoochl .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -275,7 +277,7 @@ garden_harvest %>%
   vertical-align: middle;
 }
 
-#hbboyevrmd .gt_empty_group_heading {
+#hutjdoochl .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -290,15 +292,15 @@ garden_harvest %>%
   vertical-align: middle;
 }
 
-#hbboyevrmd .gt_from_md > :first-child {
+#hutjdoochl .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#hbboyevrmd .gt_from_md > :last-child {
+#hutjdoochl .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#hbboyevrmd .gt_row {
+#hutjdoochl .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -317,7 +319,7 @@ garden_harvest %>%
   overflow-x: hidden;
 }
 
-#hbboyevrmd .gt_stub {
+#hutjdoochl .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -329,7 +331,7 @@ garden_harvest %>%
   padding-left: 12px;
 }
 
-#hbboyevrmd .gt_summary_row {
+#hutjdoochl .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -339,7 +341,7 @@ garden_harvest %>%
   padding-right: 5px;
 }
 
-#hbboyevrmd .gt_first_summary_row {
+#hutjdoochl .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -349,7 +351,7 @@ garden_harvest %>%
   border-top-color: #D3D3D3;
 }
 
-#hbboyevrmd .gt_grand_summary_row {
+#hutjdoochl .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -359,7 +361,7 @@ garden_harvest %>%
   padding-right: 5px;
 }
 
-#hbboyevrmd .gt_first_grand_summary_row {
+#hutjdoochl .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -369,11 +371,11 @@ garden_harvest %>%
   border-top-color: #D3D3D3;
 }
 
-#hbboyevrmd .gt_striped {
+#hutjdoochl .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#hbboyevrmd .gt_table_body {
+#hutjdoochl .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -382,7 +384,7 @@ garden_harvest %>%
   border-bottom-color: #D3D3D3;
 }
 
-#hbboyevrmd .gt_footnotes {
+#hutjdoochl .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -396,13 +398,13 @@ garden_harvest %>%
   border-right-color: #D3D3D3;
 }
 
-#hbboyevrmd .gt_footnote {
+#hutjdoochl .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#hbboyevrmd .gt_sourcenotes {
+#hutjdoochl .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -416,46 +418,46 @@ garden_harvest %>%
   border-right-color: #D3D3D3;
 }
 
-#hbboyevrmd .gt_sourcenote {
+#hutjdoochl .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#hbboyevrmd .gt_left {
+#hutjdoochl .gt_left {
   text-align: left;
 }
 
-#hbboyevrmd .gt_center {
+#hutjdoochl .gt_center {
   text-align: center;
 }
 
-#hbboyevrmd .gt_right {
+#hutjdoochl .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#hbboyevrmd .gt_font_normal {
+#hutjdoochl .gt_font_normal {
   font-weight: normal;
 }
 
-#hbboyevrmd .gt_font_bold {
+#hutjdoochl .gt_font_bold {
   font-weight: bold;
 }
 
-#hbboyevrmd .gt_font_italic {
+#hutjdoochl .gt_font_italic {
   font-style: italic;
 }
 
-#hbboyevrmd .gt_super {
+#hutjdoochl .gt_super {
   font-size: 65%;
 }
 
-#hbboyevrmd .gt_footnote_marks {
+#hutjdoochl .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="hbboyevrmd" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="hutjdoochl" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   <thead class="gt_header">
     <tr>
       <th colspan="3" class="gt_heading gt_title gt_font_normal" style>Daily Weight of Carrots Harvested (g) by Variety</th>
